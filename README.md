@@ -1,4 +1,10 @@
-**Goal:** Encrypt `/dev/pve/root` in place with LUKS2, boot via systemd-boot (`proxmox-boot-tool`), unlock in **initramfs** (passphrase or keyfile).
+# **Goal:** 
+Encrypt `/dev/pve/root` in place with LUKS2, boot via systemd-boot (`proxmox-boot-tool`), unlock in **initramfs** (passphrase or keyfile).
+
+## Credits
+Partially based on:
+https://blog.alex.balgavy.eu/encrypting-an-existing-linux-partition-with-luks/
+and a lot of troubleshooting on the go with Proxmox 9.
 
 # 0) On the running (unencrypted) PVE (optional but recommended)
 
